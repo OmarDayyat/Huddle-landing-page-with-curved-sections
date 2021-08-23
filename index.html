@@ -1,67 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Huddle landing page with curved sections</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Try it free
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 
-  Build The Community Your Fans Will Love
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does 
-  your audience. Create connections with your users as you engage in genuine discussion. 
+    <title>Frontend Mentor | Huddle landing page with curved sections</title>
 
-  Get Started For Free
+  </head>
 
-  1.4k+
-  Communities Formed
+  <body>
+    <nav>
+      <div class="navigation-bar">
+        <img class="logo" src="./images/logo.svg" alt="logo" />
+        <a class="nav-btn" href="#">Try it free</a>
+      </div>
+    </nav>
+    <main>
+      <div class="main-container">
+        <div class="main-container-info">
+          <h1>Build The Community Your Fans Will Love</h1>
+          <p>Huddle re-imagines the way we build communities. You have a voice, but so does
+            your audience. Create connections with your users as you engage in genuine discussion.</p>
+          <a class="main-btn" href="#">Get Started For Free</a>
+          <img class="main-image" src="./images/screen-mockups.svg" alt="mockups" />
+          <div class="numbers-container">
+            <div class="number">
+              <img class="number-image-1" src="./images/icon-communities.svg" alt="communities image" />
+              <h1>1.4k+<span>Communities Formed</span></h1>
+            </div>
+            <div class="number">
+              <img class="number-image-2" src="./images/icon-messages.svg" alt="messages image" />
+              <h1>2.7m+<span>Messages Sent</span></h1>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  2.7m+
-  Messages Sent
+      <div class="cards-container">
+        <div class="card-top"></div>
+        <div class="card">
+          <div class="card-info">
+            <h2>Grow Together</h2>
+            <p>Generate meaningful discussions with your audience and build a strong, loyal community.
+              Think of the insightful conversations you miss out on with a feedback form.</p>
+          </div>
+          <div class="card-image">
+            <img class="card-image" src="./images/illustration-grow-together.svg" alt="grow image" />
+          </div>
+        </div>
+        <div class="card-bottom"></div>
 
-  Grow Together
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. 
+        <div class="card">
+          <div class="card-info">
+            <h2>Flowing Conversations</h2>
+            <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have
+              just-in-time loading for a more natural flow.</p>
+          </div>
+          <div class="card-image">
+            <img class="card-image" src="./images/illustration-flowing-conversation.svg" alt="grow image" />
+          </div>
+        </div>
 
-  Flowing Conversations
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
-  just-in-time loading for a more natural flow.
+        <div class="card-top"></div>
+        <div class="card">
+          <div class="card-info">
+            <h2>Your Users</h2>
+            <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means,
+              once signed in to your app, your users can start chatting immediately.</p>
+          </div>
+          <div class="card-image">
+            <img class="card-image" src="./images/illustration-your-users.svg" alt="grow image" />
+          </div>
+        </div>
+        <div class="card-bottom"></div>
+      </div>
 
-  Your Users
-  It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
-  once signed in to your app, your users can start chatting immediately.
+      <div class="communityBtn-container">
+        <div class="community-btn">
+          <h2>Ready To Build Your Community?</h2>
+          <a class="main-btn" href="#">Get Started For Free</a>
+        </div>
+      </div>
 
-  Ready To Build Your Community?
-  Get Started For Free
+    </main>
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-  vestibulum a, ultrices quis sem.
-  
-  Phone: +1-543-123-4567
-  example@huddle.com
+    <div class="footer-top"></div>
+    <footer>
+      <div class="left-col">
+        <img class="logo-small" src="./images/logo.svg" alt="logo small" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
+          vestibulum a, ultrices quis sem.</p>
 
-  Newsletter
-  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-  send you spam or pass on your email address
+        <div class="contact-main-container">
+          <div class="contact-container">
+            <i class="fas fa-phone-volume"></i>
+            <p>Phone: +1-543-123-4567</p>
+          </div>
+          <div class="contact-container">
+            <i class="fas fa-envelope"></i>
+            <p>example@huddle.com</p>
+          </div>
+        </div>
 
-  Subscribe
+        <div class="social-media">
+          <i class="fab fa-2x fa-facebook-square"></i>
+          <i class="fab fa-2x fa-instagram"></i>
+          <i class="fab fa-2x fa-twitter-square"></i>
+        </div>
+      </div>
 
-  <footer>
+      <div class="right-col">
+        <h3>Newsletter</h3>
+        <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
+          send you spam or pass on your email address</p>
+        <div class="news-form">
+          <form id="form" action="/">
+            <input name="email" id="email" type="text" placeholder="Enter your Email" />
+            <button class="news-btn" type="button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Omar Al-Dayyat</a>.
     </p>
-  </footer>
-</body>
+  </body>
+
 </html>

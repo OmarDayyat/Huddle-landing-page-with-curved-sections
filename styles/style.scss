@@ -1,0 +1,290 @@
+@import "_variables.scss";
+
+/*===================
+  General
+=====================*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+   padding: 0;
+}
+
+html{
+  font-family: $font-openSans;
+}
+
+h1{
+  text-align: center;
+  font-family: $font-poppins;
+}
+
+h2{
+  font-size: 2.5rem;
+  font-family: $font-poppins;
+  margin-bottom: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*===================
+  Navigation Bar
+=====================*/
+
+.navigation-bar{
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.nav-btn{
+  background-color: transparent;
+  border: 2px solid $Pink;
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: $Pink;
+  text-transform: capitalize;
+  &:hover{
+    border-color: $Light-Pink;
+    color: $Light-Pink;
+    box-shadow: 0 1px 10px $Light-Pink-shadow;
+  }
+}
+
+/*===================
+  Main Container
+=====================*/
+
+.main-container{
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+}
+
+.main-container-info{
+  grid-column-start: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p{
+    text-align: center;
+    width: 50%;
+    margin: 20px 0;
+  }
+}
+
+.main-btn{
+  background-color: $Pink;
+  border-radius: 50px;
+  padding: 20px 20px;
+  width: 35%;
+  text-align: center;
+  color: $Very-Pale-Blue;
+  margin-bottom: 100px;
+  &:hover{
+    background-color: $Light-Pink;
+  }
+}
+
+/*===================
+  Numbers Container
+=====================*/
+
+.numbers-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 100px 0;
+  h1{
+    font-size: 4.5rem;
+    span{
+      display: block;
+      font-size: 1rem;
+      color: gray;
+      font-family: $font-openSans;
+      font-weight: 400;
+    }
+  }
+}
+
+/*===================
+  Cards Container
+=====================*/
+
+.card{
+  display: flex;
+  align-items: center;
+  background-color: $Very-Pale-Blue;
+  padding: 80px;
+}
+
+.card-top{
+  background: url("../images/bg-section-top-desktop-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh;
+}
+
+.card-bottom{
+  background: url("../images/bg-section-bottom-desktop-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh;
+}
+
+.card:nth-child(4n){
+  flex-direction: row-reverse;
+  background-color: white;
+  .card-image{
+    float: left;
+  }
+}
+
+.card-image{
+  width: 80%;
+  float: right;
+}
+
+.card-info{
+  width: 60%;
+}
+
+/*===========================
+  Community Button Container
+============================*/
+
+.communityBtn-container{
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  margin: 80px 0;
+ 
+}
+
+.community-btn{
+  grid-column-start: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*===========================
+  Footer
+============================*/
+
+.footer-top{
+  background: url("../images/bg-footer-top-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 23vh;
+}
+
+footer{
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 3fr 1fr;
+  background-color: $Very-Dark-Cyan;
+  color: $Very-Pale-Blue;
+  padding-bottom: 20px;
+}
+
+/*===========================
+  Footer left Column
+============================*/
+
+.left-col{
+  grid-column-start: 2;
+  p{
+    margin-top: 20px;
+  }
+}
+
+.logo-small{
+  filter: brightness(0) invert(100%);
+}
+
+.contact-main-container{
+  margin-top: 30px;
+  margin-bottom: 60px;
+  p{
+    margin: 0;
+  }
+}
+
+.contact-container{
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  i{
+    margin-right: 10px;
+  }
+}
+
+.social-media{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.fab{
+  cursor: pointer;
+  margin-right: 20px;
+  &:hover{
+    color: $Custom-light-blue;
+  }
+}
+
+/*===========================
+  Footer right column
+============================*/
+
+.right-col{
+  grid-column-start: 4;
+  p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 80%;
+  }
+}
+
+#form{
+  display: flex;
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
+
+#email{
+  padding: 15px;
+  width: 90%;
+  border-radius: 5px;
+  border: 0;
+  margin-right: 20px;
+}
+
+.news-btn{
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: $Pink;
+  color: $Very-Pale-Blue;
+  border: 0;
+  &:hover{
+    background-color: $Light-Pink;
+  }
+}
+
+
+/*===================
+  Attribution
+=====================*/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
