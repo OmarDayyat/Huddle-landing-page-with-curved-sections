@@ -25,7 +25,6 @@ h2{
   margin-bottom: 20px;
 }
 
-
 a{
   text-decoration: none;
 }
@@ -37,7 +36,14 @@ a{
 .navigation-bar{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 60px;
+}
+
+.logo{
+  max-width: 250px;
+  min-width: 150px;
+  height: 15%;
 }
 
 .nav-btn{
@@ -281,7 +287,6 @@ footer{
   }
 }
 
-
 /*===================
   Attribution
 =====================*/
@@ -293,4 +298,182 @@ footer{
   a {
     color: hsl(228, 45%, 44%);
   }
+}
+
+/*================================================================================
+                                    Media
+==================================================================================*/
+
+@media only screen and (max-width:1024px){
+
+  /*===================
+    General
+  =====================*/
+
+  h1{
+    font-size: 1.75rem;
+  }
+
+  h2{
+    font-size: 1.75rem;
+  }
+
+  /*===================
+    Navigation Bar
+  =====================*/
+
+  .navigation-bar{
+    padding: 20px;
+    margin-bottom: 60px;
+  }
+
+  .logo{
+    max-width: 150px;
+  }
+
+  /*===================
+    Main Container
+  =====================*/
+
+  .main-container-info{
+    p{
+      width: 100%;
+    }
+  }
+
+  .main-btn{
+    width: 100%;
+    margin: 50px 0;
+    margin-bottom: 100px;
+  }
+
+  .main-image{
+    width: 90%;
+  }
+
+  /*===================
+    Numbers Container
+  =====================*/
+
+  .numbers-container{
+    flex-direction: column;
+  }
+
+  .number{
+    margin: 50px 0;
+  }
+
+  /*===================
+    Cards Container
+  =====================*/
+
+  .card{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: $Very-Pale-Blue;
+    padding: 20px 20px;
+  }
+
+  .card-top{
+    background-position: 100% 110%;
+    background-size: 150%;
+  } 
+
+  .card-bottom{
+    background-size: 100%;
+  }
+
+  .card:nth-child(4n){
+    flex-direction: column-reverse;
+    .card-image{
+      float: none;
+    }
+  }
+
+  .card-image{
+    width: 100%;
+    float: none;
+  }
+
+  .card-info{
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /*===========================
+    Community Button Container
+  ============================*/
+
+  .communityBtn-container{
+    text-align: center;
+  }
+
+  /*===========================
+    Footer
+  ============================*/
+
+  .footer-top{
+    height: 15vh;
+    background-size: 100%;
+  }
+
+  footer{
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr ;
+  }
+
+  /*===========================
+    Footer left Column
+  ============================*/
+
+  .left-col{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    p{
+      margin-top: 20px;
+    }
+  }
+
+  .contact-main-container{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    p{
+      margin: 0;
+    }
+  }
+
+
+  /*===========================
+    Footer right column
+  ============================*/
+
+  .right-col{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    h3{
+      font-size: 1.75rem;
+    }
+    p{
+      width: 100%;
+    }
+  }
+
+  #form{
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  #email{
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .news-btn{
+    width: 50%;
+    margin-bottom: 150px;
+  }
+
 }
