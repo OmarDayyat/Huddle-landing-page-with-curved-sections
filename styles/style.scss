@@ -25,6 +25,7 @@ h2{
   margin-bottom: 20px;
 }
 
+
 a{
   text-decoration: none;
 }
@@ -82,9 +83,14 @@ a{
   text-align: center;
   color: $Very-Pale-Blue;
   margin-bottom: 100px;
+  box-shadow: 0 5px 10px hsla(0, 0%, 0%,0.2);
   &:hover{
     background-color: $Light-Pink;
   }
+}
+
+.main-image{
+  width: 100%;
 }
 
 /*===================
@@ -96,13 +102,13 @@ a{
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  margin: 100px 0;
+  margin: 75px 0;
   h1{
     font-size: 4.5rem;
     span{
       display: block;
-      font-size: 1rem;
-      color: gray;
+      font-size: 1.2rem;
+      color: hsla(0, 0%, 50%,0.7);
       font-family: $font-openSans;
       font-weight: 400;
     }
@@ -117,7 +123,7 @@ a{
   display: flex;
   align-items: center;
   background-color: $Very-Pale-Blue;
-  padding: 80px;
+  padding: 80px 150px;
 }
 
 .card-top{

@@ -97,10 +97,16 @@ a {
   text-align: center;
   color: #f5faff;
   margin-bottom: 100px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .main-btn:hover {
   background-color: #ff8fd8;
+}
+
+.main-image {
+  width: 100%;
 }
 
 /*===================
@@ -116,7 +122,7 @@ a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
-  margin: 100px 0;
+  margin: 75px 0;
 }
 
 .numbers-container h1 {
@@ -125,8 +131,8 @@ a {
 
 .numbers-container h1 span {
   display: block;
-  font-size: 1rem;
-  color: gray;
+  font-size: 1.2rem;
+  color: rgba(128, 128, 128, 0.7);
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
@@ -142,7 +148,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f5faff;
-  padding: 80px;
+  padding: 80px 150px;
 }
 
 .card-top {
